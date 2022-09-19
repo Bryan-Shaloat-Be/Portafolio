@@ -11,7 +11,7 @@ window.geometry("325x500+800+100")
 window.resizable(False, False)
 style = ttk.Style("pastel")
 window.config(backgroun="gray80")
-window.iconbitmap("D:\\Usuario Cat\\Desktop\\PPXP\\GDL Calculator\\LGTB.ico")
+window.iconbitmap("D:\\Usuario Cat\\Desktop\\PPXP\\GDL Calculator\\calculator.ico")
 
 # Global Variables
 list1 = None
