@@ -5,7 +5,7 @@
 
 - 📫 How to reach me **brayanbarraganpulido@gmail.com**
 
-- 📄 Know about my experiences [Im learning web development. Im creating web proyects](Im learning web development. Im creating web proyects)
+- 📄 Know about my experiences [Im learning web development. Im creating web proyects]
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
