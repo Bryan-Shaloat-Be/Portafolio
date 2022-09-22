@@ -493,5 +493,3 @@ button6_c = ttk.Button(window, text="  .  ", bootstyle=INFO, command=lambda: cal
 button6_c.place(x=98, y=400)
 button6_c.place_configure(width=60, height=60)
 window.mainloop()
-
-pass
