@@ -5,7 +5,7 @@
 
 - 📫 How to reach me **brayanbarraganpulido@gmail.com**
 
-- 📄 Know about my experiences [I have developed some small projects that have allowed me to learn for the creation of larger and more challenging projects.]
+- 📄 Know about my experiences I have developed some small projects that have allowed me to learn for the creation of larger and more challenging projects.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
