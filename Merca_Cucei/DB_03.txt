@@ -1,0 +1,73 @@
+Nombre: prueba_1
+
+CREATE DATABASE postgresql;
+
+\c prueba_1;
+
+CREATE TABLE usuario
+(	id		SMALLSERIAL,
+	nombre	VARCHAR(15)		NOT NULL,
+	codigo	CHAR(9) 		NOT NULL,
+	correo	VARCHAR(50)		NOT NULL,
+	contrasena	VARCHAR(15)	NOT NULL,
+	PRIMARY KEY	(id));
+	
+CREATE TABLE admin
+(	idAD		SMALLSERIAL,
+	idUS		SMALLINT		NOT NULL,
+	PRIMARY KEY	(idAD),
+	FOREIGN KEY	(idUS)		REFERENCES usuario	(id));
+
+CREATE TABLE perfil
+(	idP		SMALLSERIAL,
+	public	bool			NOT NULL,
+	PRIMARY KEY	(idP),
+	FOREIGN KEY	(idP)			REFERENCES usuario	(id));
+
+CREATE TABLE publicacion
+(	idPC		SMALLSERIAL,
+	idUS		SMALLINT		NOT NULL,
+	titulo	VARCHAR(15)		NOT NULL,
+	imagen	BYTEA			NOT NULL,
+	descrip	VARCHAR(250)	NOT NULL,
+	precio	VARCHAR(6)			NOT NULL,
+	comida	BOOL,
+	electronico	BOOL,
+	libro		BOOL,
+	accesorios	BOOL,
+	papeleria	BOOL,
+	dispo		BOOL,
+	PRIMARY KEY	(idPC),
+	FOREIGN KEY	(idUS)		REFERENCES usuario	(id));
+
+CREATE TABLE comentario
+(	idC		SMALLSERIAL,
+	idUS		SMALLINT		NOT NULL,
+	idComS	SMALLINT,
+	comentario	VARCHAR(100)	NOT NULL,
+	idP		SMALLINT		NOT NULL,
+	PRIMARY KEY	(idC),
+	FOREIGN KEY	(idP)			REFERENCES publicacion	(idPC),
+	FOREIGN KEY	(idUS)		REFERENCES usuario	(id),
+	FOREIGN KEY	(idComS)		REFERENCES comentario	(idC));
+
+CREATE TABLE reporte
+(	idR		SMALLSERIAL,
+	idP		SMALLINT		NOT NULL,
+	tipo		BOOL,
+	comentario	VARCHAR(100)	NOT NULL,
+	PRIMARY KEY	(idR),
+	FOREIGN KEY	(idP)		REFERENCES publicacion	(idPC));
+
+CREATE TABLE venta
+(	idV		SMALLSERIAL,
+	idUS		SMALLINT		NOT NULL,
+	idPB		SMALLINT		NOT NULL,
+	fecha		DATE			NOT NULL,
+	PRIMARY KEY	(idV),
+	FOREIGN KEY	(idUS)	REFERENCES publicacion	(idPC),
+	FOREIGN KEY	(idUS)	REFERENCES usuario	(id));
+
+
+
+
