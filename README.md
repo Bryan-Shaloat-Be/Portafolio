@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Bryan Shaloat Be Barragan Pulido</h1>
-<h3 align="center">Im Learning Web Development (frontend and Backend)</h3>
+<h3 align="center">Im Learning Project Development and Estuding computer engineering </h3>
 
 - 💬 Ask me about **Python, HTML , CSS, C++**
 
 - 📫 How to reach me **brayanbarraganpulido@gmail.com**
 
-- 📄 Know about my experiences [Im learning web development. Im creating web proyects]
+- 📄 Know about my experiences [I have developed some small projects that have allowed me to learn for the creation of larger and more challenging projects.]
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
